@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.codefundoblockchain.voting.Activity.HomeActivity;
+import com.codefundoblockchain.voting.Activity.Pin_Verification_Activity;
 import com.codefundoblockchain.voting.Activity.mobileVerificationActivity;
 import com.codefundoblockchain.voting.R;
 import com.codefundoblockchain.voting.Utils.SessionManager;
@@ -95,7 +96,7 @@ public class Candidate_detail_fragment extends Fragment {
                             Intent intent = new Intent(getActivity(),HomeActivity.class);
                             startActivity(intent);
                         }else{
-                            Intent intent = new Intent(getActivity(),mobileVerificationActivity.class);
+                            Intent intent = new Intent(getActivity(), Pin_Verification_Activity.class);
                             intent.putExtra("activity","vote");
                             startActivity(intent);
                         }

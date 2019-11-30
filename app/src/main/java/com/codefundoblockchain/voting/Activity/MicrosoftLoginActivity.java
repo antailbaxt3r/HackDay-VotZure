@@ -65,7 +65,8 @@ public class MicrosoftLoginActivity extends AppCompatActivity {
         final android.webkit.CookieManager cookieManager = CookieManager.getInstance();
 
         loginWebView.getSettings().setJavaScriptEnabled(true);
-        loginWebView.loadUrl("https://login.microsoftonline.com/agarwalnipun12gmail.onmicrosoft.com/oauth2/authorize?resource=a6fdf7b7-b3d1-4760-b729-d1f91ff71dc8&client_id=a6fdf7b7-b3d1-4760-b729-d1f91ff71dc8&response_type=token&redirect_uri=https://myblockchain-2et5ca.azurewebsites.net");
+        loginWebView.loadUrl("https://login.microsoftonline.com/arjunbajpaidpsgmail.onmicrosoft.com\n" +
+                "/oauth2/authorize?resource=5ecb1716-8509-4633-8d36-6b93369768fb&client_id=5ecb1716-8509-4633-8d36-6b93369768fb&response_type=token&redirect_uri=https://votzurehack-qy4zic.azurewebsites.net");
 
         pd.show();
 
