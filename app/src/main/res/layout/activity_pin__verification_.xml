@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.Pin_Verification_Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/key"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ralewaymedium"
+        android:layout_marginTop="30dp"
+        android:text="Please Enter 6 digit PIN"/>
+
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/verifyPinView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        app:pinLength="6"
+        app:pinHeight="40dp"
+        app:pinWidth="40dp"
+        app:inputType="number"
+        android:layout_height="wrap_content"></com.goodiebag.pinview.Pinview>
+
+
+    <Button
+        android:id="@+id/verifyBtn"
+        android:layout_width="302dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="VERIFY"
+        android:fontFamily="@font/ralewaysemibold"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/curved_pink_button"/>
+
+
+
+</LinearLayout>
